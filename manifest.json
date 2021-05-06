@@ -1,0 +1,17 @@
+{
+  "name": "Tools",
+  "version": "1.0",
+  "description": "Ferramentas & Utilitários",
+  "manifest_version": 2,
+  "author": "AdrielDev",
+  "browser_action": {
+    "default_title": "Tools",
+    "default_popup": "index.html",
+    "default_icon": "logo.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["background", "nativeMessaging"]
+}
