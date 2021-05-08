@@ -5,8 +5,7 @@ chrome.runtime.onMessage.addListener((request, sender) => {
     port.onMessage.addListener((message) => {
       console.log("msg: ", message);
     });
-    port.onDisconnect.addListener((error) => {
-      console.log("err: ", error);
+    port.onDisconnect.addListener((_) => {
       console.log("last error:" + chrome.runtime.lastError.message);
     });
   }

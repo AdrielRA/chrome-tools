@@ -23,3 +23,10 @@ spotify.addEventListener("click", () => {
     value: "spotify",
   });
 });
+
+slack.addEventListener("click", () => {
+  chrome.runtime.sendMessage({
+    type: "run",
+    value: "upper",
+  });
+});

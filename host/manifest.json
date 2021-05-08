@@ -1,7 +1,7 @@
 {
   "name": "com.ara.caller",
   "description": "Caller",
-  "path": "build.exe",
+  "path": "run.bat",
   "type": "stdio",
   "allowed_origins": ["chrome-extension://mfncfpkiinejeahopppkaenolcaclpac/"]
 }
