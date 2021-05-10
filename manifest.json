@@ -7,11 +7,11 @@
   "browser_action": {
     "default_title": "Tools",
     "default_popup": "index.html",
-    "default_icon": "logo.png"
+    "default_icon": "./assets/logo.png"
   },
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-  "permissions": ["background", "nativeMessaging"]
+  "permissions": ["tabs", "background", "nativeMessaging"]
 }

@@ -1,79 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LetCode</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
-    />
-    <script defer src="popup.js"></script>
+    <title>Chrome Tools</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
 
   <body>
     <div class="container">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">LetCode</p>
-        </header>
-        <div class="card-content has-text-centered">
-          <p class="subtitle">Open Window Application</p>
-          <div class="content">
-            <div class="columns is-mobile">
-              <div class="column">
-                <p class="buttons">
-                  <button class="button" id="vscode">
-                    <span class="icon is-small">
-                      <img src="icons/vscode.svg" alt="code" />
-                    </span>
-                  </button>
-                </p>
-
-                <p></p>
-              </div>
-
-              <div class="column">
-                <p class="buttons">
-                  <button class="button" id="eclipse">
-                    <span class="icon is-small">
-                      <img src="icons/eclipse.svg" alt="eclipse" />
-                    </span>
-                  </button>
-                </p>
-
-                <p></p>
-              </div>
-
-              <div class="column">
-                <p class="buttons">
-                  <button class="button" id="spotify">
-                    <span class="icon is-small">
-                      <img src="icons/spotify.svg" alt="spotify" />
-                    </span>
-                  </button>
-                </p>
-
-                <p></p>
-              </div>
-
-              <div class="column">
-                <p class="buttons">
-                  <button class="button" id="slack">
-                    <span class="icon is-small">
-                      <img src="icons/slack.svg" alt="slack" />
-                    </span>
-                  </button>
-                </p>
-
-                <p></p>
-              </div>
-            </div>
-          </div>
+      <div class="header">
+        <h2>Chrome Tools</h2>
+      </div>
+      <div id="favorites" class="glass">
+        <p class="subtitle"><strong>Favoritos</strong></p>
+        <div class="items">
+          <button class="item">
+            <img id="vscode" src="./assets/svg/vscode.svg" alt="vscode" />
+          </button>
+          <button class="item">
+            <img id="spotify" src="./assets/svg/spotify.svg" alt="spotify" />
+          </button>
+          <button class="item">
+            <img id="terminal" src="./assets/svg/terminal.svg" alt="terminal" />
+          </button>
+          <button class="item">
+            <img id="word" src="./assets/svg/word.svg" alt="word" />
+          </button>
         </div>
       </div>
-      <footer class="card-footer">
-        <p class="card-footer-item">Chrome native message</p>
+      <div id="favorites" class="glass">
+        <p class="subtitle"><strong>Formatar</strong></p>
+        <div class="items">
+          <button class="item">
+            <img id="upper" src="./assets/svg/upper.svg" alt="upper" />
+          </button>
+          <button class="item">
+            <img id="lower" src="./assets/svg/lower.svg" alt="lower" />
+          </button>
+          <button class="item">
+            <img id="sentence" src="./assets/svg/sentence.svg" alt="sentence" />
+          </button>
+          <button class="item">
+            <img
+              id="capitalize"
+              src="./assets/svg/capitalize.svg"
+              alt="capitalize"
+            />
+          </button>
+        </div>
+      </div>
+      <footer class="footer">
+        <p id="footer">AdrielDev</p>
       </footer>
     </div>
   </body>
